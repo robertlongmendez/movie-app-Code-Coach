@@ -1,0 +1,9 @@
+.itemconfiguration
+    {
+        height: 800px;
+        width: 500px;
+        overflow: auto;
+        float: right;
+        position: relative;
+        margin-left: -5px;
+    }

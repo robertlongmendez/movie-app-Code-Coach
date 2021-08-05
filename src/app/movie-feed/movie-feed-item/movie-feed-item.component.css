@@ -1,0 +1,23 @@
+article {
+  padding: 1rem;
+  margin: 1rem auto;
+  font-family: 'Oswald', sans-serif;
+  width: 400px;
+
+}
+
+h1 {
+  font-family: inherit;
+  font-weight: bold;
+}
+.dark-modal .modal-content {
+  background-color: #292b2c;
+  color: white;
+}
+.dark-modal .close {
+  color: white;
+}
+.light-blue-backdrop {
+  background-color: #5cb3fd;
+}
+

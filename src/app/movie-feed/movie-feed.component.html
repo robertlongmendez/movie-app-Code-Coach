@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <h1 style="text-align:center;">Movie Feed</h1>
+  <button class="btn btn-outline-primary" (click)="onPreviousPage()" *ngIf="this.yesPreviousPage">Previous Page</button>
+
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Select Feed</button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+        <button ngbDropdownItem (click)="onSelectNowPlaying()">Now Playing</button>
+        <button ngbDropdownItem (click)="onSelectPopular()">Popular</button>
+        <button ngbDropdownItem (click)="onSelectUpcoming()">Upcoming</button>
+      </div>
+    </div>
+    <button class="btn btn-outline-primary" (click)="onNextPage()">Next Page</button>
+
+
+    <div class="container-fluid itemconfiguration">
+      <app-movie-feed-item ngbSlide class="clearfix" *ngFor="let post of posts" [content]="post.overview"
+        [title]="post.original_title" [poster]="post.poster_path" [date]="post.release_date"></app-movie-feed-item>
+    </div>
+
+
+

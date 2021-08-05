@@ -1,0 +1,18 @@
+<hr>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <button class="btn btn-outline-dark" (click)="onNewMovie()">Create Movie</button> |
+      <button class="btn btn-outline-dark" (click)="onMovieFeed()">Movie Feeds</button>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12 itemconfiguration">
+    <app-movie-item
+    *ngFor="let movieEl of movies; let i = index"
+    [movie]="movieEl"
+    [index]="i"></app-movie-item>
+  </div>
+</div>

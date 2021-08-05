@@ -1,0 +1,20 @@
+
+<a
+    style="cursor: pointer;"
+    [routerLink]="[index]"
+    routerLinkActive="active"
+    class="list-group-item clearfix">
+     <span class="pull-right">
+    <img
+    [src]="movie.imagePath"
+    alt="{{ movie.name }}"
+    class="img-reponsive"
+    style="max-height: 100px;">
+  </span>
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{ movie.name }}</h4>
+    <p class="list-group-item-text">{{ movie.description }}</p>
+
+  </div>
+
+</a>

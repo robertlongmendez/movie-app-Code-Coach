@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand navbar-dark sticky-top" style="background-color: #8d9ca7">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="#" class="navbar-brand">Critics List</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a class="nav-link" routerLinkActive="active" routerLink="/movies">My Movie List</a></li>
+        <li class="nav-item" ><a class="nav-link" routerLinkActive="active" routerLink="/auth">Authentication</a></li>
+        <div ngbDropdown class="d-inline-block">
+          <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Manage</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem (click)="onSaveData()">Save Data</button>
+            <button ngbDropdownItem (click)="onFetchData()">Get Data</button>
+            <button ngbDropdownItem >Log Out</button>
+          </div>
+        </div>
+
+     <!-- <li class="nav-item dropdown" appDropdown data-mbd-toggle="dropdown" aria-expanded="false">
+          <a style="cursor: pointer;" class="nav-link dropdown-toggle" role="button" +
+          data-bs-toggle="dropdown" aria-expanded="false">Manage</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          </ul>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- data-bind="enable: !noResults()"  -->
+<!-- <span class="caret"></span> -->
